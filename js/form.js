@@ -41,7 +41,10 @@ class Form {
         if(foodAmt > 0) {
             foodAmt -= 1;
         }
-        time = hour();
+        if(hour() > 12) {
+            time = hour()-12 + " PM";
+        }
+        else { time = hour() + " AM"}
     }
 
     addFood() {
