@@ -52,7 +52,7 @@ function  draw() {
     drawSprites();
 
     if(time) {
-      text("Last Fed: " + time + " PM", 20, 40)
+      text("Last Fed: " + time, 20, 40)
     }
 
   } else {
